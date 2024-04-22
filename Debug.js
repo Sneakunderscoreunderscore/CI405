@@ -1,3 +1,6 @@
+//
+// converts a file into an array of words
+//
 function readFileIntoArray(fileName) {
     try {
         // Read the file content synchronously
@@ -11,7 +14,12 @@ function readFileIntoArray(fileName) {
         return [];  // Catches any errors
     }
 }
+//
+// function to check if a password is easily brute forcible 
+//
 function bruteForce(userPassword, passwords, words, count, pass) { 
+
+    // checks if a users password is in a list of common passwords
     for (let i = 0; i < passwords.length; i++) {
         if (passwords.includes(userPassword)) {
             console.log("Common Password Found!");
@@ -21,6 +29,8 @@ function bruteForce(userPassword, passwords, words, count, pass) {
             return count;
         }
     }
+
+    // checks if a password is a single word (passwords shouldn't be words? they usually cant have spaces)
     for (let i = 0; i < words.length; i++) {
         if (words[i] === userPassword) {
             console.log("This is one word!");
@@ -33,30 +43,37 @@ function bruteForce(userPassword, passwords, words, count, pass) {
     pass = true;
     return pass;
 }
-
+//
+// checks in a user password conforms to some common eligibility checks
+//
 function checkEligibility(userPassword, symbols, numbers, count, pass) {
+    // if a password contains numbers
     if (!userPassword.includes(numbers)) {
         console.log("Your password must contain at least one number.");
         count = count + 1;
         return count;
     }
+    // if a password contains symbols
     if (!userPassword.includes(symbols)) {
         console.log("Your password must contain at least one symbol.");
         console.log("Try to add a symbol such as: '! or *'.");
         count = count + 1;
         return count;
     }
+    // if the password is a reasonable length
     if (userPassword.length < 8) {
         console.log("Your password must be at least 8 characters long. The longer the better!");
         count = count + 1;
         return count;
     }
+    // if the password has no uppercase letters
     if (userPassword.toUpperCase() === userPassword) {
         console.log("Your password must contain at least one uppercase letter.");
         console.log("You could try to add camel case to your password. Such as a capital letter every 2 characters.");
         count = count + 1;
         return count;
     }
+    //if a password has no lower case letters 
     if (userPassword.toLowerCase() === userPassword) {
         console.log("Your password must contain at least one lowercase letter.");
         console.log("You could try to add camel case to your password. Such as a lowercase letter every 2 characters.");
@@ -81,6 +98,9 @@ function checkEligibility(userPassword, symbols, numbers, count, pass) {
 //}
 
 //}
+//
+// suggests help in creating a better password if the user has 
+//
 function tooManyAttempts(){
     console.log("Do you need more help?");
     
@@ -101,7 +121,7 @@ function tooManyAttempts(){
             tooManyAttempts();  // Recursively ask for correct input
         }
     readline.close();
-    }
+    })
 };
 
 //allows me to call in loop better
