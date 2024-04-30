@@ -1,1 +1,48 @@
 /** this is the main style sheet shared between all the pages **/
+/*anchors--------------------------------------------------------------------- */
+.buttona{ 
+
+  border: 2px solid #cdc;
+  border-radius: 50px; 
+  padding: 10px 20px; 
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+
+  background-color: #2e2e2e; 
+  background-clip: padding-box;
+
+  color: #FFA500;
+  font-family: Georgia, "Times New Roman", Verdana; 
+  font-weight: bold; 
+  text-decoration: none;
+}
+
+.buttona:hover {
+  background-color: #f1f1f1;
+}
+
+.buttona:active {
+
+  background-color: #f1f1f1;
+}
+
+
+
+.linka{
+    color: #FFA500;
+    margin-bottom: 0.2em;
+}
+
+input:required {
+  background-color: #96413F;
+}
+#send{
+
+  border: 2px solid #cdc; 
+  border-radius: 50px; 
+  padding: 10px 20px; 
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
