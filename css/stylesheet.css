@@ -221,6 +221,12 @@ li a {
   text-decoration: none;
 }
 ol	{
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+	font-size: 1.5em;
+}
 }
 dl	{
 }
