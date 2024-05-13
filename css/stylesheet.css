@@ -189,6 +189,13 @@ p	{  font-family: "Teko", sans-serif;
   font-style: normal;
 	font-size: 30px;
 }
+.important {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 50;
+  font-style: normal;
+	font-size: 25px;
+	color:crimson
+}
 blockquote	{
 }
 table   {
@@ -240,6 +247,7 @@ cite	{
 }
 time	{
 }
+
 /*image----------------------------------------------------------------------- */
 figure	{
 }
