@@ -189,11 +189,11 @@ p	{  font-family: "Teko", sans-serif;
   font-style: normal;
 	font-size: 30px;
 }
-.important {
+tag {
   font-family: "Jersey 15", sans-serif;
   font-weight: 50;
   font-style: normal;
-	font-size: 25px;
+	font-size: 20px;
 	color:crimson
 }
 blockquote	{
