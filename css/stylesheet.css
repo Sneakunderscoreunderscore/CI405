@@ -133,14 +133,14 @@ nav ul {
   float: left;
   width: 4em;
   background-color: #f1f1f1;d
-  padding-left: 0.1em;
+  padding-left: 1em;
 }
 
 /* Fake image */
 .fakeimg {
   background-color: #aaa;
   width: 7em;
-  padding: 0.1em;
+  padding: 1em;
 }
 
 /* Add a card effect for articles */
@@ -170,18 +170,18 @@ h2	{
 	 font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   font-style: normal;
-font-size: 2em;
+font-size: 2.2em;
 }
 h3 	{
 	font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   font-style: normal;
-font-size: 1.5em;
+font-size: 2em;
 }
 h4 {font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   font-style: normal;
-font-size: 1.2em;
+font-size: 1.8em;
 }
 /*grouping------------------------------------------------------------------- */
 p{  
@@ -189,13 +189,13 @@ p{
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-	font-size: 1em;
+	font-size: 1.5em;
 }
 tag {
   font-family: "Jersey 15", sans-serif;
   font-weight: 50;
   font-style: normal;
-	font-size: 1em;
+	font-size: 1.5em;
 	color:crimson
 }
 blockquote	{
