@@ -3,7 +3,7 @@
 
 /*Responsive______________________________________________________*/
 /*when the screen is less than 800px wide------*/
-@media screen and (max-width: 800px) {
+@media (max-width: 35em) { 
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
@@ -108,7 +108,7 @@ nav ul {
 .topnav .icon {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 30em) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -132,7 +132,7 @@ nav ul {
 .rightcolumn {
   float: left;
   width: 25%;
-  background-color: #f1f1f1;
+  background-color: #f1f1f1;d
   padding-left: 20px;
 }
 
@@ -146,8 +146,8 @@ nav ul {
 /* Add a card effect for articles */
 .card {
   background-color: white;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 0.1em;
+  margin-top: 1em;
 }
 
 /* Clear floats after the columns */
@@ -163,37 +163,39 @@ h1	{
   font-family: "Jersey 15", sans-serif;
   font-weight: 50;
   font-style: normal;
-	font-size: 70px;
-	color:crimson
+	font-size: 3em;
+	color:crimson;
 }
 h2	{
 	 font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   font-style: normal;
-font-size: 50px
+font-size: 2em;
 }
 h3 	{
 	font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   font-style: normal;
-font-size: 30px
+font-size: 1.5em;
 }
 h4 {font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   font-style: normal;
-font-size: 30px}
+font-size: 1.2em;
+}
 /*grouping------------------------------------------------------------------- */
-p	{  font-family: "Teko", sans-serif;
+p{  
+  font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300px;
+  font-weight: 300;
   font-style: normal;
-	font-size: 30px;
+	font-size: 1em;
 }
 tag {
   font-family: "Jersey 15", sans-serif;
   font-weight: 50;
   font-style: normal;
-	font-size: 30px;
+	font-size: 1em;
 	color:crimson
 }
 blockquote	{
@@ -204,18 +206,18 @@ table   {
 ul {
    list-style-type: none;
   margin: 0;
-  padding: 10px;
-  width: 160px;
+  padding: 0.1em;
+  width: 0.1em;
   font-family: "Arvo", serif;
   font-weight: 400;
   font-style: normal;
-	font-size: 20px;
+	font-size: 0.7em;
 }
 
 li a {
   display: block;
   color: #000;
-  padding: 6px 12px;
+  padding: 02.em 0.4em;
   text-decoration: none;
 }
 ol	{
@@ -229,7 +231,7 @@ dd	{
 li a.active {
   background-color: #04AA6D;
   color: white;
-	padding: 10px;
+	padding: 0.35em;
 }
 /*li a:hover:not(.active) {
   background-color: #555;
@@ -255,8 +257,8 @@ figcaption	{
 }
 img	{
 	background-color: #aaa;
-  width: 100%;
-  padding: 20px;
+  width: 50%;
+  padding: 0.3em;
 }
 /*anchors--------------------------------------------------------------------- */
 a:link	{
