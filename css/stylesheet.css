@@ -3,14 +3,14 @@
 
 /*Responsive______________________________________________________*/
 /*when the screen is less than 800px wide------*/
-@media (max-width: 35em) { 
+@media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
   }
 }
 /*When the screen is less that 400px-----------*/
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 400px) {
   .topnav a {
     float: none;
     width: 100%;
@@ -20,7 +20,7 @@
 
 body {
   font-family: Arial;
-  padding: 1em;
+  padding: 10px;
   background: #f1f1f1;
 }
 
@@ -45,16 +45,16 @@ body {
 	
 
 footer {
-	 padding: 2em;
+	 padding: 20px;
   text-align: center;
   background: #ddd;
-  margin-top: 2em;
+  margin-top: 20px;
 	
 }
-header {  padding: 3em;
+header {  padding: 30px;
    text-align: center;
   background: #787878;
-		border-radius: 2.5em;
+		border-radius: 25px;
 
 }
 .post	{
@@ -72,6 +72,7 @@ nav ul {
   list-style-type: none;
 	padding: 0; } */
 
+
 .menu	{
 }
 /*Navigation ---------------------------------------------------*/
@@ -87,9 +88,9 @@ nav ul {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15% 18%;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15%;
 }
 
 /* Change the color of links on hover */
@@ -125,29 +126,29 @@ nav ul {
 /* Left column */
 .leftcolumn {   
   float: left;
-  width: 5.5em;
+  width: 75%;
 }
 
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 4em;
-  background-color: #f1f1f1;d
-  padding-left: 1em;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 10%;
 }
 
 /* Fake image */
 .fakeimg {
   background-color: #aaa;
-  width: 7em;
-  padding: 1em;
+  width: 100%;
+  padding: 10%;
 }
 
 /* Add a card effect for articles */
 .card {
   background-color: white;
-  padding: 0.1em;
-  margin-top: 1em;
+  padding: 10%;
+  margin-top: 10%;
 }
 
 /* Clear floats after the columns */
@@ -156,6 +157,7 @@ nav ul {
   display: table;
   clear: both;
 }
+
 
 
 /*headings------------------------------------------------------------------- */
