@@ -10,13 +10,17 @@
   }
 }
 /*When the screen is less that 400px-----------*/
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
+.topnav a {
+  padding: 0.875em 1em;  // Adjusted to em units
+  font-size: 1.0625em;    // Base font size, typically adjusts well across devices
 }
-/*sections------------------------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+  .topnav a {
+    padding: 0.75em 0.9em;  // Slightly smaller padding for smaller screens
+    font-size: 1em;         // Base font size for readability on small devices
+  }
+}sections------------------------------------------------------------------- */
 
 body {
   font-family: Arial;
