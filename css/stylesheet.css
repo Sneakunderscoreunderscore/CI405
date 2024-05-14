@@ -11,14 +11,14 @@
 }
 /*When the screen is less that 400px-----------*/
 .topnav a {
-  padding: 0.875em 1em;  // Adjusted to em units
-  font-size: 1.0625em;    // Base font size, typically adjusts well across devices
+  padding: 0.875em 1em;  
+  font-size: 1.0625em;    
 }
 
 @media screen and (max-width: 800px) {
   .topnav a {
-    padding: 0.75em 0.9em;  // Slightly smaller padding for smaller screens
-    font-size: 1em;         // Base font size for readability on small devices
+    padding: 0.75em 0.9em;  
+    font-size: 1em;         
   }
 }sections------------------------------------------------------------------- */
 
