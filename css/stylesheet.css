@@ -9,11 +9,7 @@
     padding: 0;
   }
 }
-/*When the screen is less that 400px-----------*/
-.topnav a {
-  padding: 0.875em 1em;  
-  font-size: 1.0625em;    
-}
+
 
 }sections------------------------------------------------------------------- */
 
@@ -96,7 +92,7 @@ nav ul {
   text-align: center;
   padding: 0.875em 1em; /* Default padding */
   text-decoration: none;
-  font-size: 1.0625em; /* Default font size */
+  font-size: 1.2625em; /* Default font size */
 }
 
 /* Hover effect */
