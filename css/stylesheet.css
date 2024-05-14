@@ -19,7 +19,7 @@
 
 body {
   font-family: Arial;
-  padding: 10px;
+  padding: 4%;
   background: #f1f1f1;
 }
 
@@ -44,16 +44,16 @@ body {
 	
 
 footer {
-  padding: 20px;
+  padding: 3%;
   text-align: center;
   background: #ddd;
-  margin-top: 20px;
+  margin-top: 4%www;
 	
 }
-header {  padding: 30px;
+header {  padding: 5%;
   text-align: center;
   background: #787878;
-		border-radius: 25px;
+  border-radius: 7%;
 
 }
 .post	{
@@ -119,9 +119,9 @@ nav ul {
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 10%;
+  width: 5%;
   background-color: #f1f1f1;
-  padding-left: 10%;
+  padding-left: 4%;
 }
 
 /* Fake image */
@@ -134,8 +134,8 @@ nav ul {
 /* Add a card effect for articles */
 .card {
   background-color: white;
-  padding: 10%;
-  margin-top: 10%;
+  padding: 3%;
+  margin-top: 5%;
 }
 
 /* Clear floats after the columns */
