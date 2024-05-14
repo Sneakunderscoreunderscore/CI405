@@ -17,9 +17,10 @@
 
 @media screen and (max-width: 800px) {
   .topnav a {
-    padding: 0.75em 0.9em;  
-    font-size: 1em;         
+    padding: 0.75em 0.9em;  // Slightly smaller padding for smaller screens
+    font-size: 1em;         // Base font size for readability on small devices
   }
+}
 }sections------------------------------------------------------------------- */
 
 body {
@@ -92,9 +93,9 @@ nav ul {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 4% 6%;
+  padding: 0.875em 1em;
   text-decoration: none;
-  font-size: 5%;
+  font-size: 1.1em;
 }
 
 /* Change the color of links on hover */
