@@ -142,6 +142,27 @@ nav ul {
   clear: both;
 }
 
+.topnav a, .button {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            background-color: #333;
+            margin-right: 5px;
+}
+
+.topnav a:hover, .button:hover {
+            background-color: #ddd;
+            color: black;
+}
+
+.topnav a.active {
+            background-color: #FF383C;
+            color: white;
+}
 
 /*headings------------------------------------------------------------------- */
 h1	{
