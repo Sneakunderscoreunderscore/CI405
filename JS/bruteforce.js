@@ -81,15 +81,17 @@ function checkEligibility(userPassword, count, pass) {
 }
 
 function clearLog() {
-            document.getElementById('log').textContent = ''; // Clears the log
+            document.getElementById('output').textContent = ''; // Clears the log
 }
 
 function tooManyAttempts(input) {
+            console.log("It seems you are struggling, do you need more information?");
+            console.log("Please input 'y' or 'n' to answer.")
             valid = false;
-            if (input === 'y') {
+            if (input.toLowerCase() === 'y') {
                 console.log("Here is a page of information on how to improve your password: https://planetlumi.github.io/password.html");
                 valid = true;
-            } else if (input === 'n') {
+            } else if (input.toLowerCase() === 'n') {
                 console.log("Continuing without further help. Please enter a different password.");
                 valid = true;
             } else {
