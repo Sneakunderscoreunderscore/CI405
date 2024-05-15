@@ -166,7 +166,7 @@ nav ul {
 
 
 .log{
-	style="white-space: pre-wrap;
+	white-space: pre-wrap;
 	background: #ffffff; 
 	border: 1% 
 	solid #e96900; 
@@ -175,6 +175,13 @@ nav ul {
 	height: 30%; 
 	overflow-y:scroll;
 
+}
+.userInput{
+	background: #ffffff
+	border: 1% solid f1f1f1;
+	padding: 5%; 
+	margin-top: 3%; 
+	height: 10%; 
 }
 /*headings------------------------------------------------------------------- */
 h1	{
