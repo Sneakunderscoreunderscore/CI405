@@ -168,8 +168,8 @@ nav ul {
 
 .log {
     white-space: pre-wrap;
-    background: #333; 
-    border: 2% solid #f1f1f1; 
+    background: #ffffff; 
+    border: 5% solid #f1f1f1; 
     padding: 1%; 
     margin-top: 0.5%; 
     height: 30%; 
@@ -181,7 +181,8 @@ nav ul {
     border: 1% solid #f1f1f1;
     padding: 0.5%; 
     margin-top: 3%; 
-    height: 3%; 
+    height: 3%;
+    length: 8%;
 }
 /*headings------------------------------------------------------------------- */
 h1	{
