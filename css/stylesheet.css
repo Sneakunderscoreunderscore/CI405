@@ -164,24 +164,22 @@ nav ul {
             color: white;
 }
 
-
-.log{
-	white-space: pre-wrap;
-	background: #ffffff; 
-	border: 1% 
-	solid #e96900; 
-	padding: 5%; 
-	margin-top: 3%; 
-	height: 30%; 
-	overflow-y:scroll;
-
+.log {
+    white-space: pre-wrap;
+    background: #ffffff; 
+    border: 1% solid #e96900; 
+    padding: 5%; 
+    margin-top: 3%; 
+    height: 30%; 
+    overflow-y: scroll;
 }
-.userInput{
-	background: #ffffff
-	border: 1% solid f1f1f1;
-	padding: 5%; 
-	margin-top: 3%; 
-	height: 10%; 
+
+.userInput {
+    background: #ffffff;
+    border: 1% solid #f1f1f1;
+    padding: 5%; 
+    margin-top: 3%; 
+    height: 10%; 
 }
 /*headings------------------------------------------------------------------- */
 h1	{
