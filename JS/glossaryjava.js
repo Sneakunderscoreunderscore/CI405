@@ -1,11 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('searchInput').addEventListener('input', function() {
+    console.log('JavaScript loaded');
+    
+    var searchInput = document.getElementById('searchInput');
+    var glossaryItems = document.querySelectorAll('#glossaryList li');
+
+    searchInput.addEventListener('input', function() {
         var searchQuery = this.value.toLowerCase();
-        var glossaryItems = document.querySelectorAll('#glossaryList li');
+        console.log('Search Query:', searchQuery);
 
         glossaryItems.forEach(function(item) {
-            var term = item.querySelector('b');
-            if (term && term.textContent.toLowerCase().includes(searchQuery)) {
+            var term = item.querySelector('b').textContent.toLowerCase();
+            if (term.includes(searchQuery)) {
                 item.style.display = '';
             } else {
                 item.style.display = 'none';
