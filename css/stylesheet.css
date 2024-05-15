@@ -219,6 +219,15 @@ tag {
 	font-size: 30px;
 	color:crimson
 }
+
+small{
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+	font-size: 15px;
+}
+}
 /*lists---------------------------------------------------------------------- */
 ul {
    list-style-type: none;
