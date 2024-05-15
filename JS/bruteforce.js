@@ -28,9 +28,9 @@ function bruteForce(userPassword, passwords, count) {
             }
             pass = true;
             return pass;
-        }
+}
 
-        function checkEligibility(userPassword, count, pass) {
+function checkEligibility(userPassword, count, pass) {
             pass = true;
             const symbols = ["!", '"', "£", "$", "%", "^", "&", "*", "(", "[", "]", "{", "}", "#", "~", "@", "'", ":", ";", "?", "/", ">", "<", ",", "`", ".", "¬", "_", "-", "+", "="];
             const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -62,29 +62,29 @@ function bruteForce(userPassword, passwords, count) {
                 count = count + 1;
             }
             return pass;
-        }
+}
 
-        (function() {
+(function() {
             var oldLog = console.log;
             console.log = function(message) {
                 oldLog.apply(console, arguments); // keeps default behaviour
                 document.getElementById('log').textContent += message + '\n'; // adds message to div
             };
-        })();
+ })();
 
-        function handleInput() {
+ function handleInput() {
             const input = document.getElementById('userInput').value;
             if (input.trim() == '') {
                 alert("Please enter some text in the input box.");
             }
             return input;
-        }
+}
 
-        function clearLog() {
+function clearLog() {
             document.getElementById('log').textContent = ''; // Clears the log
-        }
+}
 
-        function tooManyAttempts(input) {
+function tooManyAttempts(input) {
             valid = false;
             if (input === 'y') {
                 console.log("Here is a page of information on how to improve your password: https://planetlumi.github.io/password.html");
@@ -97,9 +97,9 @@ function bruteForce(userPassword, passwords, count) {
                 valid = false;
             }
             return valid;
-        }
+}
 
-        document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
             let count = 0; 
 
             document.getElementById('submitButton').addEventListener('click', function() {
@@ -118,9 +118,9 @@ function bruteForce(userPassword, passwords, count) {
                     }
                 }
             });
-        });
+});
 
-        function run(userPassword, count) {
+function run(userPassword, count) {
             // Initialize variables
             var pass = false;
             pass = checkEligibility(userPassword, count, pass);
@@ -134,4 +134,4 @@ function bruteForce(userPassword, passwords, count) {
                 count = bruteForce(userPassword, passwords, count);
             }
             return count;
-        }
+}
