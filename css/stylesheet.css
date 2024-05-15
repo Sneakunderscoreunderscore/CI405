@@ -164,6 +164,18 @@ nav ul {
             color: white;
 }
 
+
+.id="log"{
+	style="white-space: pre-wrap;
+	background: #ffffff; 
+	border: 1% 
+	solid #e96900; 
+	padding: 5%; 
+	margin-top: 3%; 
+	height: 30%; 
+	overflow-y:scroll;
+
+}
 /*headings------------------------------------------------------------------- */
 h1	{
   font-family: "Jersey 15", sans-serif;
