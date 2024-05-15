@@ -239,7 +239,7 @@ b{
 /*lists---------------------------------------------------------------------- */
 ul {
    list-style-type: none;
-  bottom-margin: 5%;
+
   padding: 0%;
   width: 100%;
   font-family: "Arvo", serif;
@@ -251,7 +251,8 @@ ul {
 li a {
   display: block;
   color: #000;
-  padding: 6px 12px;
+  bottom-margin: 5%;
+  padding: 2px 4px;
   text-decoration: none;
 }
 li a.active {
