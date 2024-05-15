@@ -5,141 +5,133 @@ var userPassword = ""; var count = 0;
 
 //the function below is used to see if the user has inputted a commonly known password
 function bruteForce(userPassword, passwords, count) {
-    console.log("Round one complete!")//Splash text for the children =D
-    check = userPassword.toLowerCase(); //this makes it easier to run through array
-    if (check.includes("password")){
-        console.log("Common Password Found!");
-        console.log(userPassword);
-        console.log("Try to make your password harder, such as adding a number to the end of your words. Do not use common words like \'password\'.");
-        count = count + 1;
-        return count;
-    }
-    console.log("Round two complete!");
-    if (check.includes(passwords)){
-            console.log("Common Password Found!");
-            console.log(userPassword);
-            console.log("Try to make your password harder, such as adding a number to the end of your words.");
-            count = count + 1;
-            return count;
-    }
-    else {
-        console.log("Round three complete!");
-        console.log("Your password was not linked to our database!");
-        console.log("Congratulations! Your strong password is: " + userPassword);
-    }
-    pass = true;
-    return pass;
-}
-//This checks to see if their password inputted is atleast secure enough to be used normally
-function checkEligibility(userPassword,count, pass) {
-    pass = true;
-    const symbols = ["!",'"',"£","$","%","^","&","*","(","[","]","{","}","#","~","@","'",":",";","?","/",">","<",",","`",".","¬","_","-","+","="];
-
-    const numbers = ["0","1","2","3","4","5","6","7","8","9",];
-    
-    if (userPassword.length < 8) {
-        console.log("Your password must be at least 8 characters long. The longer the better!");
-        pass = false;
-    }
-    if (!numbers.some(number => userPassword.includes(number))) {
-        console.log("Your password must contain at least one number.");
-        pass = false;
-    }
-    if (!symbols.some(symbol => userPassword.includes(symbol))) {
-        console.log("Your password must contain at least one symbol.");
-        console.log("Try to add a symbol such as: '! or *'.");
-        pass = false;
-    }
-    if (userPassword.toUpperCase() === userPassword) {
-        console.log("Your password must contain at least one lowercase letter.");
-        console.log("You could try to add camel case to your password. Such as a capital letter every 2 characters.");
-        pass = false;
-    }
-    if (userPassword.toLowerCase() === userPassword) {
-        console.log("Your password must contain at least one uppercase letter.");
-        console.log("You could try to add camel case to your password. Such as a lowercase letter every 2 characters.");
-        pass = false;
-    }
-    if (pass == false) {
-        count = count + 1;
-    }
-    return pass;
-}
-
-
-//this is used to make the ltitle box and fill it with the console messages
-(function() {
-    var oldLog = console.log;
-    console.log = function(message) {
-        oldLog.apply(console, arguments); // keeps default behaviour
-        document.getElementById('log').textContent += message + '\n'; // adds message to div
-    };
-})();
-//this is used to take everyoens inputs
-function handleInput() {
-    const input = document.getElementById('userInput').value;
-    if (input.trim() == '') {
-        alert("Please enter some text in the input box.");
-    }
-    return input;
-}
-//this is used to clear the log
-function clearLog() {
-    document.getElementById('log').textContent = ''; // Clears the log
-
-}
-
-//this is used to ask if the user needs help with finding the right password.
-function tooManyAttempts(input) {
-    valid = false;
-    if (input === 'y') {
-        console.log("Here is a page of information on how to improve your password: https://planetlumi.github.io/password.html");
-        valid = true;
-    } else if (input === 'n') {
-        console.log("Continuing without further help. Please enter a different password.");
-        valid = true;
-    } else {
-        console.log("Invalid input. Please enter 'y' to find more information, or 'n' to continue.");
-        valid = false
-    }
-    return valid;
-}
-
-//this takes in the user input once the button is clicked.
-document.addEventListener('DOMContentLoaded', function() {
-    let count = 0; // 
-
-    document.getElementById('submitButton').addEventListener('click', function() {
-        clearLog();
-        const input = handleInput(); //takes in user input
-        if(input == ""){
-            return;
-        }
-        if (count < 3) {
-            count = run(input, count); //this runs the program 
-        } else {
-            // Handle 'y' or 'n' input after 3 failed attempts
-            valid = tooManyAttempts(input.toLowerCase()); //this runs a program to check on the user if they need help
-            if(valid){
-                count = 0; //reset the count once a user has answered.
+            console.log("Round one complete!"); //Splash text for the children =D
+            check = userPassword.toLowerCase(); //this makes it easier to run through array
+            if (check.includes("password")) {
+                console.log("Common Password Found!");
+                console.log(userPassword);
+                console.log("Try to make your password harder, such as adding a number to the end of your words. Do not use common words like 'password'.");
+                count = count + 1;
+                return count;
             }
+            console.log("Round two complete!");
+            if (check.includes(passwords)) {
+                console.log("Common Password Found!");
+                console.log(userPassword);
+                console.log("Try to make your password harder, such as adding a number to the end of your words.");
+                count = count + 1;
+                return count;
+            } else {
+                console.log("Round three complete!");
+                console.log("Your password was not linked to our database!");
+                console.log("Congratulations! Your strong password is: " + userPassword);
+            }
+            pass = true;
+            return pass;
         }
-    });
-});
 
-//this runs the main functions of the program
-function run(userPassword,count) {
-    // Initialize variables
-    var pass = false;
-    pass = checkEligibility(userPassword, count, pass);
-    if(!pass){
-    count = count + 1;
-    console.log(count);
-    }
-    if(pass){
-    console.log("Your password is eligible for brute force test, well done!");
-    console.log("Attempting to brute force your password, this can take some time...");
-    count = bruteForce(userPassword, passwords, count);
-    }
-    return count;
-}
+        function checkEligibility(userPassword, count, pass) {
+            pass = true;
+            const symbols = ["!", '"', "£", "$", "%", "^", "&", "*", "(", "[", "]", "{", "}", "#", "~", "@", "'", ":", ";", "?", "/", ">", "<", ",", "`", ".", "¬", "_", "-", "+", "="];
+            const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+            if (userPassword.length < 8) {
+                console.log("Your password must be at least 8 characters long. The longer the better!");
+                pass = false;
+            }
+            if (!numbers.some(number => userPassword.includes(number))) {
+                console.log("Your password must contain at least one number.");
+                pass = false;
+            }
+            if (!symbols.some(symbol => userPassword.includes(symbol))) {
+                console.log("Your password must contain at least one symbol.");
+                console.log("Try to add a symbol such as: '! or *'.");
+                pass = false;
+            }
+            if (userPassword.toUpperCase() === userPassword) {
+                console.log("Your password must contain at least one lowercase letter.");
+                console.log("You could try to add camel case to your password. Such as a capital letter every 2 characters.");
+                pass = false;
+            }
+            if (userPassword.toLowerCase() === userPassword) {
+                console.log("Your password must contain at least one uppercase letter.");
+                console.log("You could try to add camel case to your password. Such as a lowercase letter every 2 characters.");
+                pass = false;
+            }
+            if (pass == false) {
+                count = count + 1;
+            }
+            return pass;
+        }
+
+        (function() {
+            var oldLog = console.log;
+            console.log = function(message) {
+                oldLog.apply(console, arguments); // keeps default behaviour
+                document.getElementById('log').textContent += message + '\n'; // adds message to div
+            };
+        })();
+
+        function handleInput() {
+            const input = document.getElementById('userInput').value;
+            if (input.trim() == '') {
+                alert("Please enter some text in the input box.");
+            }
+            return input;
+        }
+
+        function clearLog() {
+            document.getElementById('log').textContent = ''; // Clears the log
+        }
+
+        function tooManyAttempts(input) {
+            valid = false;
+            if (input === 'y') {
+                console.log("Here is a page of information on how to improve your password: https://planetlumi.github.io/password.html");
+                valid = true;
+            } else if (input === 'n') {
+                console.log("Continuing without further help. Please enter a different password.");
+                valid = true;
+            } else {
+                console.log("Invalid input. Please enter 'y' to find more information, or 'n' to continue.");
+                valid = false;
+            }
+            return valid;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            let count = 0; 
+
+            document.getElementById('submitButton').addEventListener('click', function() {
+                clearLog();
+                const input = handleInput(); //takes in user input
+                if (input == "") {
+                    return;
+                }
+                if (count < 3) {
+                    count = run(input, count); //this runs the program 
+                } else {
+                    // Handle 'y' or 'n' input after 3 failed attempts
+                    valid = tooManyAttempts(input.toLowerCase()); //this runs a program to check on the user if they need help
+                    if (valid) {
+                        count = 0; //reset the count once a user has answered.
+                    }
+                }
+            });
+        });
+
+        function run(userPassword, count) {
+            // Initialize variables
+            var pass = false;
+            pass = checkEligibility(userPassword, count, pass);
+            if (!pass) {
+                count = count + 1;
+                console.log(count);
+            }
+            if (pass) {
+                console.log("Your password is eligible for brute force test, well done!");
+                console.log("Attempting to brute force your password, this can take some time...");
+                count = bruteForce(userPassword, passwords, count);
+            }
+            return count;
+        }
