@@ -196,10 +196,6 @@ tag {
 	font-size: 30px;
 	color:crimson
 }
-blockquote	{
-}
-table   {
-}
 /*lists---------------------------------------------------------------------- */
 ul {
    list-style-type: none;
@@ -218,14 +214,6 @@ li a {
   padding: 6px 12px;
   text-decoration: none;
 }
-ol	{
-}
-dl	{
-}
-dt	{
-}
-dd	{
-}
 li a.active {
   background-color: #04AA6D;
   color: white;
@@ -237,33 +225,12 @@ li a.active {
 	padding; 10px;
 } */
 /*text------------------------------------------------------------------------ */
-em	{
-}
-strong	{
-}
-small	{
-}
-cite	{
-}
-time	{
-}
 
 /*image----------------------------------------------------------------------- */
-figure	{
-}
-figcaption	{
-}
+
 img	{
 	background-color: #aaa;
   width: 100%;
   padding: 20px;
 }
 /*anchors--------------------------------------------------------------------- */
-a:link	{
-}
-a:visited {
-}
-a:hover {
-}
-a:active {
-}
