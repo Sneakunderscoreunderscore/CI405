@@ -166,8 +166,8 @@ nav ul {
 
 .log {
     white-space: pre-wrap;
-    background: #ffffff; 
-    border: 2% solid #e96900; 
+    background: #333; 
+    border: 2% solid #f1f1f1; 
     padding: 1%; 
     margin-top: 0.5%; 
     height: 30%; 
