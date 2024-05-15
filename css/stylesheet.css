@@ -1,21 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*Responsive______________________________________________________*/
-/*when the screen is less than 800px wide------*/
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-/*When the screen is less that 400px-----------*/
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
 /*sections------------------------------------------------------------------- */
 
 body {
@@ -234,3 +219,20 @@ img	{
   padding: 20px;
 }
 /*anchors--------------------------------------------------------------------- */
+
+/*Responsive______________________________________________________*/
+/*when the screen is less than 800px wide------*/
+@media screen and (max-width: 1000px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+}
+/*When the screen is less that 400px-----------*/
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
