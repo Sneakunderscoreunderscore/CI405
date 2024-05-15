@@ -128,7 +128,6 @@ function run(userPassword, count) {
             pass = checkEligibility(userPassword, count, pass);
             if (!pass) {
                 count = count + 1;
-                console.log(count);
             }
             if (pass) {
                 console.log("Your password is eligible for brute force test, well done!");
