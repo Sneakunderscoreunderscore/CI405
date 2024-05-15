@@ -238,8 +238,8 @@ b{
 /*lists---------------------------------------------------------------------- */
 ul {
    list-style-type: none;
-  margin: 0;
-  padding: 4%;
+  bottom-margin: 4%;
+  padding: 1%;
   width: 100%;
   font-family: "Arvo", serif;
   font-weight: 400;
