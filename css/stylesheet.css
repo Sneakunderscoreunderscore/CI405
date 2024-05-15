@@ -167,8 +167,8 @@ nav ul {
 .log {
     white-space: pre-wrap;
     background: #ffffff; 
-    border: 1% solid #e96900; 
-    padding: 0.5%; 
+    border: 2% solid #e96900; 
+    padding: 1%; 
     margin-top: 0.5%; 
     height: 30%; 
     overflow-y: scroll;
