@@ -68,7 +68,7 @@ function checkEligibility(userPassword, count, pass) {
             var oldLog = console.log;
             console.log = function(message) {
                 oldLog.apply(console, arguments); // keeps default behaviour
-                document.getElementById('log').textContent += message + '\n'; // adds message to div
+                document.getElementById('output').textContent += message + '\n'; // adds message to div
             };
  })();
 
