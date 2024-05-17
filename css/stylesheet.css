@@ -249,6 +249,7 @@ ul {
 }
 li {
   bottom-margin: 10px;
+  bottom-padding: 10px
 }
 
 li a {
