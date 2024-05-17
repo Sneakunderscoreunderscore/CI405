@@ -217,7 +217,9 @@ p	{  font-family: "Teko", sans-serif;
   text-align: justify;
 }
 .bottomtext {
-text-align: center;
+	padding: 70px 0;
+	border: 3px;
+	text-align: center;
 
 }
 tag {
