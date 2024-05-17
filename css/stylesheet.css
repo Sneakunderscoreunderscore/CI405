@@ -216,6 +216,10 @@ p	{  font-family: "Teko", sans-serif;
 	font-size: 30px;
   text-align: justify;
 }
+.bottom text {
+text-align: center;
+
+}
 tag {
   font-family: "Jersey 15", sans-serif;
   font-weight: 50;
